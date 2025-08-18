@@ -23,7 +23,14 @@
 	<script src="assets/js/html5shiv.js"></script>
 	<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
-
+	<style>
+    body { font-family: 'Open Sans', sans-serif; }
+    .gallery-item { margin-bottom: 30px; }
+    .gallery-item img { width: 100%; border-radius: 8px; transition: transform 0.3s; }
+    .gallery-item img:hover { transform: scale(1.05); }
+    .filters { margin-bottom: 30px; text-align: center; }
+    .filters button { margin: 5px; }
+  </style>
 </head>
 
 <body class="home">
@@ -190,6 +197,34 @@ Notre équipe vous accompagne tout au long du processus, afin que votre logement
 		
 		</div>
 	</div>
+	 <div class="container" >
+    <h2 class="text-center">Galerie d’images</h2>
+    <p class="text-center">Découvrez nos réalisations et projets immobiliers.</p>
+
+    <!-- Filtres -->
+    <div class="filters">
+      <button class="btn btn-default" data-filter="*">Tout</button>
+      <button class="btn btn-primary" data-filter=".appartement">Appartements</button>
+      <button class="btn btn-primary" data-filter=".parking">Parking</button>
+      <button class="btn btn-primary" data-filter=".commerce">Lot Commercial</button>
+	  <button class="btn btn-primary" data-filter=".bureau">Espace Bureau</button>
+    </div>
+
+    <!-- Galerie -->
+    <div class="row grid">
+      <div class="col-sm-4 gallery-item appartement"><img src="assets/images/IMB1.jpg" alt="Appartement"></div>
+      <div class="col-sm-4 gallery-item appartement"><img src="assets/images/IMB2.jpg" alt="Appartement"></div>
+      <div class="col-sm-4 gallery-item appartement"><img src="assets/images/IMB3.jpg" alt="Appartement"></div>
+
+      <div class="col-sm-4 gallery-item appartement"><img src="assets/images/IMB4.jpg" alt="Appartement"></div>
+      <div class="col-sm-4 gallery-item parking"><img src="assets/images/Parking.jpg" alt="parking"></div>
+      <div class="col-sm-4 gallery-item commerce"><img src="assets/images/lot_commerce.png" alt="commerce"></div>
+	  
+	  
+      <div class="col-sm-4 gallery-item bureau"><img src="assets/images/bureau.jpg" alt="parking"></div>
+      <div class="col-sm-4 gallery-item bureau"><img src="assets/images/bureau-entreprise.jpg" alt="commerce"></div>
+    </div>
+  </div>
 	<!-- /Highlights -->
 	
 	
@@ -366,5 +401,23 @@ Notre équipe vous accompagne tout au long du processus, afin que votre logement
 	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>
         
+		
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      var $grid = $('.grid').isotope({
+        itemSelector: '.gallery-item',
+        layoutMode: 'fitRows'
+      });
+
+      $('.filters button').on('click', function(){
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        $('.filters button').removeClass('btn-success').addClass('btn-primary');
+        $(this).removeClass('btn-primary').addClass('btn-success');
+      });
+    });
+  </script>
 </body>
 </html>
