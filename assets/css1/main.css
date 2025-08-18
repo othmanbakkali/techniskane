@@ -1,0 +1,423 @@
+/* Header */
+#head { background:#181015 url( ../images/bg_header.jpg) no-repeat; background-size: cover; min-height:700px; text-align: center; padding-top:240px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }
+#head.secondary { height:135px; min-height: 135px; padding-top:0px; }
+	#head .lead { background: rgba(255, 255, 255, .7); font-family:"Open sans", Helvetica, Arial; font-size:44px; margin-bottom:6px; color:black; line-height:1.15em; } 
+	#head .tagline { background: rgba(255, 255, 255, .7); color:rgba(0, 0, 0, 1); margin-bottom:25px; }
+		#head .tagline a { color:#fff; } 
+	#head .btn { margin-bottom:10px;}
+	#head .btn-default { text-shadow: none; background:transparent; color:rgba(255,255,255,.5); -webkit-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); -moz-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); background: transparent; }
+		#head .btn-default:hover,
+		#head .btn-default:focus { color:rgba(255,255,255,.8); -webkit-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); -moz-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); background: transparent; }
+		#head .btn-default:active, 
+		#head .btn-default.active { color:rgba(87, 172, 169, 1); -webkit-box-shadow:inset 0px 0px 0px 3px #fff; -moz-box-shadow:inset 0px 0px 0px 3px #fff; box-shadow:inset 0px 0px 0px 3px #fff; background: transparent; }
+
+@media (max-width: 767px) {
+	#head { min-height:420px; padding-top:160px; }
+	#head .lead { font-size: 34px; }
+}
+
+
+/* Autohide navbar */
+.slideUp { top:-100px; }
+.headroom { -webkit-transition: all 0.4s ease-out; -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; transition: all 0.4s ease-out; }
+
+
+/* Highlights (in jumbotron in most cases) */
+.highlight { margin-top:40px; }
+	.h-caption { text-align: center; } 
+	.h-caption i { display:block; font-size: 54px; color:#382526; margin-bottom:36px; }
+	.h-caption h4 { color:#382526; font-size: 16px; font-weight: bold; margin-bottom:20px; }
+	.h-body { }
+
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 { font-family:"Open sans", Helvetica, Arial; }
+h1, .h1, h2, .h2, h3, .h3 { margin-top:30px; } 
+blockquote { font-style: italic; font-family: Georgia; color:#999; margin:30px 0 30px; }
+label { color: #777; }
+.thin { font-weight:300; }
+.page-title { margin-top:20px; font-weight:300; }
+.text-muted { color:#888; }
+.breadcrumb { background:none; padding:0; margin:30px 0 0px 0; }
+ul.list-spaces li{ margin-bottom:10px; }
+
+/* Helpers */
+.container-full { margin: 0 auto; width: 100%; }
+.top-space { margin-top: 60px; }
+.top-margin { margin-top:20px; }
+
+img { max-width:100%; }
+img.pull-right { margin-left: 10px; }
+img.pull-left { margin-right: 10px; }
+#map { width:100%; height:280px; }
+#social { margin-top:50px; margin-bottom:50px; }
+	#social .wrapper { width:340px; margin:0 auto; }
+
+/* Main content block */
+.maincontent { }
+
+/* Sidebars */
+.sidebar { padding-top:36px; padding-bottom:30px; }
+	.sidebar .widget { margin-bottom:20px; }
+	.sidebar h1, .sidebar .h1, .sidebar h2, .sidebar .h2, .sidebar h3, .sidebar .h3 { margin-top:20px; } 
+
+/* Footer */
+.footer1 { background: #232323; padding: 30px 0 0 0; font-size: 12px; color: #999; }
+	.footer1 a { color: #ccc; }
+		.footer1 a:hover {color: #fff; }
+	.footer1 .widget { margin-bottom:30px; }		
+	.footer1 .widget-title { font-size: 17px; font-weight: bold; color: #ccc; margin: 0 0 20px; }
+	.footer1 .entry-meta { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin: 0 0 35px 0; padding: 2px 0; color: #888888; font-size: 12px; font-size: 0.75rem; }
+		.footer1 .entry-meta a { color: #333333; }
+		.footer1 .entry-meta .meta-in { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 10px 0; }
+	.follow-me-icons { font-size:30px; }		
+		.follow-me-icons i { float:left; margin:0 10px 0 0; }		
+
+.footer2 { background: #191919; padding: 15px 0; color: #777; font-size: 12px; }
+	.footer2 a { color: #aaa; }
+		.footer2 a:hover { color: #fff; }
+		.footer2 p { margin: 0; }
+
+	.widget-simplenav { margin-left:-5px; }		
+	.widget-simplenav a{ margin:0 5px; }		
+
+
+
+/*===================================================================*/
+.main_accordion{}
+.main_accordion .single_accordion{
+    margin-bottom: 10px;
+}
+button.accordion {
+    background:url(../img/accordion.png) no-repeat scroll right -114px #333;
+    color: #fff;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    transition:background-color 0.5s ease-in-out;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+button.accordion.active, button.accordion:hover {
+    background:url(../img/accordion.png) no-repeat scroll right 10px #ec4848;;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0.5rem;
+    background-color: #fefefe;
+    display: none;
+    transition:all 0.6s;
+    border: 1px solid #ddd;
+}
+div.panel p{
+    margin-bottom: 0;
+}
+
+div.panel.show {
+    display: block !important;
+    margin-bottom: 0;
+}
+
+
+.skill {
+    overflow:hidden;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+.service-text{margin-top:30px;}
+.skill .progress .lead {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    left: 10px;
+    position: absolute;
+    top: 4px;
+    z-index: 99;
+    font-family: "Open Sans","Sans Serif";
+}
+.skill .progress {
+    background-color: #ddd;
+    border-radius: 0;
+    box-shadow: none;
+    height: 30px;
+    margin-bottom: 44px;
+    overflow: visible;
+    position: relative;
+    border: 1px solid #d1d1d1;
+}
+.skill .progress-bar span {
+    background: #333 none repeat scroll 0 0;
+    float: right;
+    font-size: 11px;
+    margin-right: 10px;
+    margin-top: -26px;
+    position: relative;
+    padding: 0 5px;
+}
+.skill .progress-bar > span:before,.skill .progress-bar > span:after{
+    border: medium solid transparent;
+    content: " ";
+    height: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    width: 0;
+}
+.skill .progress-bar > span:before{
+    border-top-color: #333;
+    border-width: 5px;
+    left: 50%;
+    margin-left: -5px;
+}
+.progress-bar {
+    background: #ec4848;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 28px;
+}
+
+
+
+
+/*==========================================================
+                Service section style
+============================================================*/
+.main_service_area{}
+.main_service_area .col-md-4:hover .single_service{
+    background: #3f444a;
+    color:#fff;
+}
+.main_service_area .jumbotron{
+    padding:2rem .6rem;
+}
+.main_service_area .single_service{
+    transition: all 0.3s;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.main_service_area .single_service i{
+    font-size:3rem;
+}
+
+
+/*==========================================================
+                JoinUs section style
+============================================================*/
+
+
+.main_joinus_area{
+    background: url(../img/joinbg.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+.main_joinus_content{
+    padding: 100px 20px;
+}
+.main_joinus_content i{
+    font-size:3rem;
+    color:#ec4848;
+}
+.main_joinus_content p{
+    width: 75%;
+    margin:20px auto;
+}
+
+
+/*==========================================================
+                JoinUs section style
+============================================================*/
+
+.main_offer_area{}
+.main_offer_area .main_offer_content{
+    overflow: hidden;
+}
+.main_offer_area .single_offer .single_offer_icon{
+
+}
+.main_offer_area .single_offer .single_offer_icon i{
+    font-size: 2rem;
+    color: #fff;
+    background: #ec4848;
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+    text-align: center;
+
+}
+
+/*==========================================================
+                Client section style
+============================================================*/
+.main_client_area .main_client_content .single_c_text{}
+.main_client_area .main_client_content .single_c_text h3{
+    margin:0;
+    padding: 0;
+}
+.main_client_area .main_client_content .single_c_text span{
+    font-size: 0.778rem;
+    color: #ec4848;
+    font-weight: 700;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.carousel.carousel-slider .carousel-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 55%;
+    left: 0;
+}
+.carousel .carousel-item img{
+    width:60%;
+}
+
+
+/*==========================================================
+                Client section style
+============================================================*/
+
+.main_counter_area{
+    background: url(../img/counterbg.jpg) no-repeat top center;
+    background-size: cover;
+    overflow: hidden;
+}
+.main_counter_area .main_counter_content{}
+.main_counter_area .main_counter_content .single_counter{
+    background: rgba(236, 72, 72, 0.5);
+}
+.main_counter_area .main_counter_content .single_counter i{
+    font-size:2rem;
+}
+
+/*======================================================================
+                Team Section style
+========================================================================*/
+
+.main_team_area{}
+.main_team_area .main_team_content{}
+.main_team_area .main_team_content .single_team{
+    position: relative;
+    width:100%;
+    overflow: hidden;
+}
+.main_team_area .main_team_content .single_team img{
+    width:100%;
+}
+.main_team_area .main_team_content .single_team:hover .single_team_overlay{
+    bottom:0;
+}
+.main_team_area .main_team_content .single_team .single_team_overlay{
+    background: #ec4848;
+    width:100%;
+    position: absolute;
+    left:0;
+    bottom:-100%;
+    transition: all 0.3s;
+
+}
+.main_team_area .main_team_content .single_team .single_team_overlay h4{
+    margin:0;
+    padding: 0;
+}
+.main_team_area .main_team_content .single_team .single_team_overlay p{
+    margin:0;
+    padding: 0;
+}
+
+.main_team_area .main_team_content .single_team .single_team_overlay .team_socail{}
+.main_team_area .main_team_content .single_team .single_team_overlay .team_socail a i{
+    color:#fff;
+    padding:0px 2px;
+    transition: all 0.3s;
+}
+.main_team_area .main_team_content .single_team .single_team_overlay .team_socail a:hover i{
+    color:#000;
+    border-bottom: 2px solid #000;
+}
+
+
+
+
+/*=====================================================================
+                Portfolio Section Style
+=======================================================================*/
+
+
+/*.main_portfolio_area{
+    overflow: hidden;  
+}*/
+.main_mixi_content{
+    max-height: 900px;
+}
+.main_mix_menu ul li{
+    display: inline-block;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+.main_mix_menu ul li.active {
+    color:#ec4848;
+}
+
+.single_mixi_portfolio .single_portfolio_text h3{
+    text-transform: lowercase !important;
+    margin-bottom: 0;
+    padding-top:1rem;
+}
+.single_portfolio_img{
+    position:relative;
+}
+.single_portfolio_img img{
+    width:100%;
+    height: 230px;
+}
+.single_portfolio_img:hover .mixi_portfolio_overlay{
+    opacity:1;
+}
+.mixi_portfolio_overlay{
+    background: rgba(236, 72, 72, 0.55);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    opacity: 0;
+    padding-top: 30%;
+}
+.mixi_portfolio_overlay a i{
+    font-size: 1rem;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    outline:none !important;
+}
+.mixcontent .mix{
+    display: none;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-origin: 50% 0;
+}
+/*======================================================================
+                    ours works 
+========================================================================*/
+
+.main_works_area{
+    overflow: hidden;
+}
