@@ -3,9 +3,58 @@
 /*******************************/
 .navbar-inverse { border-radius: 0; background:rgba(255, 255, 255, .80); border-bottom:1px solid rgba(87, 172, 169, 1); min-height:100px; padding-top:25px; margin-bottom:0;}
 .navbar-inverse *:focus { outline: 0; }
+/* Améliorations responsive */
 @media (max-width: 767px) {
-	.navbar-inverse {  background:rgba(255, 255, 255,.80); }
+  /* Navbar */
+  .navbar-inverse {
+    min-height: 60px;   /* Réduit la hauteur */
+    padding-top: 10px;  /* Moins d'espace */
+  }
+
+  /* Logo / Marque */
+  .navbar-brand img {
+    height: 50px;   /* Logo plus petit sur mobile */
+  }
+  .navbar-inverse .navbar-brand {
+    font-size: 18px; 
+    margin: 5px 0 0 0;
+  }
+
+  /* Navigation centrée */
+  .navbar-collapse ul {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .navbar-collapse ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  /* Boutons dans la navbar */
+  .navbar-collapse ul .btn {
+    width: 80%;        /* bouton plus large mais pas 100% */
+    margin: 10px auto;
+    display: block;
+  }
+
+  /* Jumbotron */
+  .jumbotron {
+    padding: 20px 15px;
+    text-align: center;
+  }
+  .jumbotron h2,
+  .jumbotron h3 {
+    font-size: 20px; /* titres adaptés au mobile */
+  }
+
+  /* Images */
+  img {
+    max-width: 100%; /* images fluides */
+    height: auto;
+  }
 }
+
 
 .navbar-inverse .navbar-nav > li > a,
 .navbar-inverse .navbar-nav > .open ul > a { color:rgba(0, 0, 0, .4); }
