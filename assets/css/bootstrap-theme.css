@@ -10,6 +10,9 @@
     min-height: 60px;   /* Réduit la hauteur */
     padding-top: 10px;  /* Moins d'espace */
   }
+  .navbar-inverse .navbar-brand img {
+    height: 50px !important;
+  }
 
   /* Logo / Marque */
   .navbar-brand img {
