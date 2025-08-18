@@ -606,7 +606,10 @@ Notre équipe vous accompagne tout au long du processus, afin que votre logement
 
         <!-- wow js active -->
         <script type="text/javascript">
-            new WOW().init();
+            $(document).ready(function () {
+				new WOW().init();
+				$('#mixcontent').mixItUp();
+			});
         </script>
 
         <script type="text/javascript" src="assets/js/plugins.js"></script>
